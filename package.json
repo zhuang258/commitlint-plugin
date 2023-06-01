@@ -1,12 +1,11 @@
 {
-  "name": "commitlint-plugin-custom-rule",
+  "name": "commitlint-plugin-prefix",
   "version": "1.0.0",
-  "description": "",
-  "main": "lib/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "My custom commitlint plugin",
+  "main": "index.js",
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-conventional": "^17.6.5"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC"
 }
