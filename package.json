@@ -1,11 +1,21 @@
 {
-  "name": "commitlint-plugin-prefix",
+  "name": "commitlint-plugin-jira-plugin",
   "version": "1.0.0",
   "description": "My custom commitlint plugin",
   "main": "index.js",
-  "devDependencies": {
-    "@commitlint/cli": "^17.6.5",
-    "@commitlint/config-conventional": "^17.6.5"
+  "license": "ISC",
+  "commitlint": {
+    "plugins": [
+      "./index"
+    ],
+    "rules": {
+      "jira-task-id": [
+        2,
+        "always"
+      ]
+    }
   },
-  "license": "ISC"
+  "dependencies": {
+    "@commitlint/cli": "^17.6.5"
+  }
 }
